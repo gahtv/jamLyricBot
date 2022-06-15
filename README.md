@@ -17,4 +17,4 @@ SPOTIFYSECRET=
 4. Change playlist ID
 5. Run!
 ## Bugs
-[ ] Nothing right now - although I do probably need to prettify my code.
+Nothing right now - although I do probably need to prettify my code.
