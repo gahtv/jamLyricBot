@@ -55,9 +55,8 @@ async def scheduled_job():
     lists = filtered.split("\n")
     # Pick 2 random lines from the lyrics
     rand = random.randint(1, len(lists) - 1)
-    print(f"Line '{rand}' in list ({lists})", file=open("debug.txt", "a")) # Debugging for me to see what line is being chosen
     # Post the lyrics to Twitter
-    api.update_status(f"\"{lists[rand - 1]} {lists[rand + 1]}\" on {track} by {artist}.")
+    api.update_status(f"\"{lists[rand - 1]} {lists[rand]}\" on {track} by {artist}.")
 
 
 if __name__ == '__main__':
