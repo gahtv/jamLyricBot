@@ -54,7 +54,7 @@ async def scheduled_job():
             filtered += line + "\n"  # Add the line to the filtered lyrics
     lists = filtered.split("\n")
     # Pick 2 random lines from the lyrics
-    rand = random.randint(1, len(lists) - 1)
+    rand = random.randint(2, len(lists) - 1)
     # Post the lyrics to Twitter
     api.update_status(f"\"{lists[rand - 1]} {lists[rand]}\" on {track} by {artist}.")
 
